@@ -1,4 +1,4 @@
-# Week 3 – Selfie & Identity
+# Make 2: Selfie & Identity
 
 ## The Artifact
 
@@ -21,3 +21,4 @@ Respond to this week’s reflection prompt in 200–300 words.
 - AI prompts (summary):
 - What AI generated:
 - What you changed or decided:
+

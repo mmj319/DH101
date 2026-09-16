@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title | default: site.title }}</title>
+  <meta name="description" content="{{ page.description | default: site.description }}">
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌸</text></svg>">
+</head>
+<body>
+  <!-- Navigation Header -->
+  <nav class="cute-nav">
+    <div class="cute-nav-inner">
+      <a href="{{ site.baseurl }}/" class="cute-brand">
+        <span class="brand-sparkle">✨</span> Maddie's Space 🌸
+      </a>
+      <ul class="nav-links">
+        <li><a href="{{ site.baseurl }}/">🏠 Home</a></li>
+        <li><a href="{{ site.baseurl }}/#angel">🐾 Angel Baby</a></li>
+        <li><a href="{{ site.baseurl }}/#resume">📄 Resume</a></li>
+        <li><a href="{{ site.baseurl }}/#anime">📺 Anime</a></li>
+        <li><a href="{{ site.baseurl }}/pages/about.html">🌸 About</a></li>
+        <li><a href="{{ site.baseurl }}/#coursework">📚 DH101</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Content Wrapper -->
+  <main class="container">
+    <article class="markdown-content">
+      {{ content }}
+    </article>
+  </main>
+
+  <!-- Cute Footer -->
+  <footer class="cute-footer">
+    <div class="container">
+      <p>Made with <span class="footer-heart">💖</span> and lots of treats for Angel Baby 🐾</p>
+      <p><small>Maddie Jensen • Denison University • Digital Humanities 101</small></p>
+    </div>
+  </footer>
+</body>
+</html>
+

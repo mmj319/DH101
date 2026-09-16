@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maddie Jensen 🌸 | DH101 & Angel Baby</title>
+  <meta name="description" content="Personal portfolio for Madison Jensen at Denison University. Featuring Digital Humanities 101 coursework, professional resume, and dog pictures of Angel Baby!">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌸</text></svg>">
+</head>
+<body>
+
+  <!-- Sticky Cute Navigation -->
+  <nav class="cute-nav">
+    <div class="cute-nav-inner">
+      <a href="index.html" class="cute-brand">
+        <span class="brand-sparkle">✨</span> Maddie's Space 🌸
+      </a>
+      <ul class="nav-links">
+        <li><a href="#about">🌸 About</a></li>
+        <li><a href="#angel">🐾 Angel Baby</a></li>
+        <li><a href="#resume">📄 Resume</a></li>
+        <li><a href="#anime">📺 Anime Faves</a></li>
+        <li><a href="#coursework">💻 DH101</a></li>
+        <li><a href="pages/about.html">🎀 Full Bio</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container">
+
+    <!-- Hero Header -->
+    <header class="hero-card" id="about">
+      <div class="hero-badge-row">
+        <span class="badge badge-pink">🎓 Denison University '29</span>
+        <span class="badge badge-lavender">✨ Any Pronouns</span>
+        <span class="badge badge-peach">🏡 Springfield, PA</span>
+        <span class="badge badge-mint">👑 President & PR Chair: Anime & Manga Clubs</span>
+        <span class="badge badge-butter">🐾 Pug Mom to Angel</span>
+      </div>
+      <h1 class="hero-title">Hi, I'm Maddie! 🌸✨</h1>
+      <p class="hero-subtitle">
+        Welcome to my cozy corner of the web! I'm from <strong>Springfield, PA</strong> (<strong>any pronouns</strong>) 
+        and currently a student at Denison University. Here you'll find my critical making and reflections for 
+        <strong>Digital Humanities 101</strong>, my leadership as <strong>President & PR Chair of both the Anime Club and Manga Club</strong>, 
+        my professional resume, favorite animes, and plenty of love for my pup, <strong>Angel Baby</strong>.
+      </p>
+      <div class="hero-quick-nav">
+        <a href="#angel" class="btn-cute btn-primary">🐾 Meet Angel Baby</a>
+        <a href="#resume" class="btn-cute btn-secondary">📄 View My Resume</a>
+        <a href="#anime" class="btn-cute btn-secondary">📺 Anime Faves</a>
+        <a href="#coursework" class="btn-cute btn-secondary">💻 DH101 Hub</a>
+      </div>
+    </header>
+
+    <!-- SECTION 1: ANGEL BABY'S CORNER (DOG SPACE) -->
+    <section class="section-wrapper" id="angel">
+      <div class="section-header">
+        <h2 class="section-title">
+          <span class="section-title-icon">🐾</span> Angel Baby's Corner
+        </h2>
+        <span class="badge badge-pink">Official Cuddle Officer 🐶💖</span>
+      </div>
+
+      <div class="dog-grid">
+        <!-- Polaroid Showcase Card -->
+        <div class="polaroid-wrapper">
+          <div class="polaroid-frame" id="featuredPolaroid">
+            <div class="washi-tape"></div>
+            <div class="polaroid-img-box">
+              <img id="mainDogImg" src="assets/images/angel-baby.jpg" alt="Angel Baby the smiling pug relaxing on the couch with tongue out">
+            </div>
+            <div class="polaroid-caption">
+              <span>💖 Angel Baby</span>
+              <small style="font-size: 0.85rem; color: var(--text-muted); font-weight: 500;">(Couch Potato Supreme)</small>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dog Bio & Interactive Gallery -->
+        <div class="dog-stats-card">
+          <h3 style="color: var(--primary-deep); margin-bottom: 8px; font-size: 1.4rem;">
+            About Miss Angel 🎀
+          </h3>
+          <p style="font-size: 0.95rem; color: var(--text-muted);">
+            Angel Baby is the unofficial mascot of my college career. Whether she's providing moral support 
+            during late-night study sessions or perfecting the art of lounging, she always brings pure joy.
+          </p>
+
+          <ul class="dog-bio-list">
+            <li>
+              <span class="dog-bio-icon">🏷️</span>
+              <div><strong>Breed:</strong> Pug (100% sweetheart)</div>
+            </li>
+            <li>
+              <span class="dog-bio-icon">👑</span>
+              <div><strong>Job Title:</strong> Chief Morale & Snack Officer</div>
+            </li>
+            <li>
+              <span class="dog-bio-icon">💤</span>
+              <div><strong>Specialty:</strong> Napping upside down & cute tongue bleps</div>
+            </li>
+            <li>
+              <span class="dog-bio-icon">🍪</span>
+              <div><strong>Favorite Food:</strong> Whatever treat you're holding right now</div>
+            </li>
+            <li>
+              <span class="dog-bio-icon">✨</span>
+              <div><strong>Superpower:</strong> Melting hearts with a single head tilt</div>
+            </li>
+          </ul>
+
+          <div style="margin-top: 20px; border-top: 2px dashed var(--border-soft); padding-top: 16px;">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+              <h4 style="font-size: 1.05rem; color: var(--primary-deep);">📸 Photo Gallery</h4>
+              <label for="dogPhotoUpload" class="badge badge-lavender" style="cursor: pointer; border: 1px dashed var(--pastel-lavender-dark);">
+                ➕ Add a Photo
+              </label>
+              <input type="file" id="dogPhotoUpload" accept="image/*" style="display: none;">
+            </div>
+
+            <div class="dog-gallery-thumbnails" id="dogThumbs">
+              <div class="dog-thumb active-thumb" onclick="swapDogPhoto('assets/images/angel-baby.jpg', 'Angel Baby on the couch')">
+                <img src="assets/images/angel-baby.jpg" alt="Angel Baby on the couch">
+              </div>
+              <label for="dogPhotoUpload" class="dog-thumb dog-add-slot">
+                <span>➕</span>
+                <span>Upload</span>
+              </label>
+            </div>
+            <p id="uploadNote" style="font-size: 0.8rem; color: var(--text-light); margin-top: 8px;">
+              ✨ Tip: Click "+ Add a Photo" above to preview any other pictures of Angel in this frame!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: RESUME SPACE -->
+    <section class="section-wrapper" id="resume">
+      <div class="section-header">
+        <h2 class="section-title">
+          <span class="section-title-icon">📄</span> My Resume
+        </h2>
+        <div class="resume-actions">
+          <button onclick="window.print()" class="btn-cute btn-primary" title="Print or save as PDF">
+            🖨️ Print / Save PDF
+          </button>
+        </div>
+      </div>
+
+      <div class="resume-container">
+        <!-- Resume Header -->
+        <div class="resume-header">
+          <div>
+            <h2 class="resume-name">Madison Jensen</h2>
+            <div class="resume-contact-bar">
+              <span class="resume-contact-item">📍 Springfield, PA 19064</span>
+              <span>•</span>
+              <span class="resume-contact-item">✉️ <a href="mailto:jensen_m1@denison.edu">jensen_m1@denison.edu</a></span>
+              <span>•</span>
+              <span class="resume-contact-item">📞 484-432-4392</span>
+            </div>
+          </div>
+          <div class="badge badge-pink" style="font-size: 0.9rem; padding: 6px 14px;">
+            🌟 Denison Class of 2029
+          </div>
+        </div>
+
+        <!-- Summary -->
+        <div class="resume-block">
+          <h3 class="resume-block-title">🌸 Professional Summary</h3>
+          <p style="font-size: 0.98rem; color: var(--text-main); line-height: 1.65;">
+            Dedicated, community-focused professional with emerging experience in guest services, event leadership, 
+            and public relations. Proven track record in community leadership through founding a youth comfort charity 
+            and serving concurrently as <strong>President and Public Relations Chair for both Denison University's Anime Club and Manga Club</strong>. Passionate about 
+            creating welcoming, engaging experiences and strengthening community connections.
+          </p>
+        </div>
+
+        <!-- Education -->
+        <div class="resume-block">
+          <h3 class="resume-block-title">🎓 Education</h3>
+          
+          <div class="resume-item">
+            <div class="resume-item-top">
+              <span class="resume-item-role">Bachelor of Arts in Psychology</span>
+              <span class="resume-item-date">Expected 05/2029</span>
+            </div>
+            <div class="resume-item-org">Denison University — Granville, OH</div>
+            <ul class="resume-item-desc">
+              <li>Academic Standing: <strong>4.0 GPA</strong>, consistent Dean's List recognition for exemplary academic achievement.</li>
+              <li>Campus Leadership: President & Public Relations Chair for both Denison Anime Club and Manga Club, directing organization leadership, event coordination, and promotional outreach.</li>
+              <li>Coursework: Digital Humanities 101, Behavioral Research Methods & Statistics, Anthropology, and Consumer Psychology.</li>
+            </ul>
+          </div>
+
+          <div class="resume-item">
+            <div class="resume-item-top">
+              <span class="resume-item-role">High School Diploma</span>
+              <span class="resume-item-date">Graduated 06/2025</span>
+            </div>
+            <div class="resume-item-org">Springfield High School — Springfield, PA</div>
+            <ul class="resume-item-desc">
+              <li>Academics: 4.0 unweighted GPA / 4.4 weighted GPA; ranked in top 10% of graduating class (350+ students).</li>
+              <li>Honors: Inducted into National Honor Society, National Art Honor Society, and National English Honor Society.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Leadership & Community Service -->
+        <div class="resume-block">
+          <h3 class="resume-block-title">💖 Leadership & Community Service</h3>
+          
+          <div class="resume-item">
+            <div class="resume-item-top">
+              <span class="resume-item-role">Founder & Director</span>
+              <span class="resume-item-date">Ongoing</span>
+            </div>
+            <div class="resume-item-org">Madison's Mission — Springfield, PA</div>
+            <ul class="resume-item-desc">
+              <li>Founded and directed charity dedicated to providing comfort teddy bears to children affected by traumatic events.</li>
+              <li>Successfully secured community donations and partnered with emergency first responders to comfort 400+ children in need.</li>
+              <li>Introduced the comfort bear drive to Scenic Hills Elementary School, establishing an enduring annual community fundraiser.</li>
+            </ul>
+          </div>
+
+          <div class="resume-item">
+            <div class="resume-item-top">
+              <span class="resume-item-role">President & Public Relations Chair</span>
+              <span class="resume-item-date">2025 – Present</span>
+            </div>
+            <div class="resume-item-org">Denison University Anime Club & Manga Club — Granville, OH</div>
+            <ul class="resume-item-desc">
+              <li>Serve concurrently as President and Public Relations Chair for both Denison's Anime Club and Manga Club.</li>
+              <li>Lead executive board governance, meeting agendas, weekly screenings, cultural discussions, and campus-wide events.</li>
+              <li>Spearhead creative marketing campaigns, digital and print promotional materials, social media engagement, and community building across campus.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Professional Experience -->
+        <div class="resume-block">
+          <h3 class="resume-block-title">💼 Experience</h3>
+          
+          <div class="resume-item">
+            <div class="resume-item-top">
+              <span class="resume-item-role">Guest Services Associate</span>
+              <span class="resume-item-date">03/2023 – 09/2023</span>
+            </div>
+            <div class="resume-item-org">Putt-Putt Fun Center — Clifton Heights, PA</div>
+            <ul class="resume-item-desc">
+              <li>Delivered high-energy, friendly customer service to families and youth in a fast-paced entertainment facility.</li>
+              <li>Managed prize counter operations, ticket redemption, attraction sales, cash handling, and register balancing.</li>
+              <li>Maintained arcade equipment readiness by restocking game tickets and resolving token mechanism issues promptly.</li>
+              <li>Prepared and served concessions while maintaining strict safety, hygiene, and facility cleanliness standards.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Awards & Recognition -->
+        <div class="resume-block">
+          <h3 class="resume-block-title">🏆 Awards & Recognition</h3>
+          <div class="resume-item">
+            <div class="resume-item-top">
+              <span class="resume-item-role">Daughters of the American Revolution (DAR) Good Citizen Award</span>
+              <span class="resume-item-date">2025</span>
+            </div>
+            <div class="resume-item-org">Delaware County DAR Chapter & Springfield High School</div>
+            <ul class="resume-item-desc">
+              <li>Selected by a high school faculty committee for demonstrating outstanding dependability, service, leadership, and patriotism.</li>
+              <li>Won the regional essay award for the Delaware County chapter following a highly competitive multi-candidate evaluation.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Core Skills -->
+        <div class="resume-block" style="margin-bottom: 0;">
+          <h3 class="resume-block-title">✨ Key Skills & Proficiencies</h3>
+          <div class="skills-pill-wrap">
+            <span class="skill-pill">Guest Relations & Hospitality</span>
+            <span class="skill-pill">Leadership & Teamwork</span>
+            <span class="skill-pill">Public Relations & Social Media</span>
+            <span class="skill-pill">Community Outreach</span>
+            <span class="skill-pill">Event Coordination</span>
+            <span class="skill-pill">Attention to Detail</span>
+            <span class="skill-pill">Written & Verbal Communication</span>
+            <span class="skill-pill">Cash Handling & POS</span>
+            <span class="skill-pill">Time Management</span>
+            <span class="skill-pill">Empathy & Active Listening</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: ANIME I'VE WATCHED & ENJOY -->
+    <section class="section-wrapper" id="anime">
+      <div class="section-header">
+        <h2 class="section-title">
+          <span class="section-title-icon">📺</span> Anime I've Watched & Love
+        </h2>
+        <span class="badge badge-lavender">Anime & Manga Club President & PR Chair 👑🎨</span>
+      </div>
+
+      <div class="cute-card" style="margin-bottom: 24px;">
+        <p style="font-size: 1rem; color: var(--text-main); line-height: 1.65;">
+          As <strong>President and PR Chair of both Denison University's Anime Club and Manga Club</strong>, 
+          watching, reading, analyzing, and sharing anime and manga is one of my greatest creative passions! 
+          From visually stunning Studio Ghibli films to supernatural folklore, shonen heroics, and comforting 
+          slice-of-life stories, here are some of my favorite series and movies:
+        </p>
+      </div>
+
+      <div class="anime-grid">
+        <!-- Card 1: Toilet-Bound Hanako-kun -->
+        <div class="anime-card">
+          <div class="anime-card-header">
+            <div>
+              <h3 class="anime-card-title">Toilet-Bound Hanako-kun</h3>
+              <div class="anime-card-jp">Jibaku Shounen Hanako-kun</div>
+            </div>
+            <span class="badge badge-pink">All-Time Fave 💖</span>
+          </div>
+          <div class="anime-genre-tags">
+            <span class="anime-tag">Supernatural</span>
+            <span class="anime-tag">Mystery</span>
+            <span class="anime-tag">Folklore</span>
+          </div>
+          <p class="anime-card-desc">
+            Adore the distinctive watercolor storybook art style, charming humor, and deep emotional lore between Hanako, Nene, and Kou.
+          </p>
+          <div class="anime-card-footer">
+            <span>✨ Status: Watched</span>
+            <span class="anime-rating">💖💖💖💖💖</span>
+          </div>
+        </div>
+
+        <!-- Card 2: Howl's Moving Castle -->
+        <div class="anime-card">
+          <div class="anime-card-header">
+            <div>
+              <h3 class="anime-card-title">Howl's Moving Castle</h3>
+              <div class="anime-card-jp">Studio Ghibli / Hayao Miyazaki</div>
+            </div>
+            <span class="badge badge-butter">Comfort Movie ✨</span>
+          </div>
+          <div class="anime-genre-tags">
+            <span class="anime-tag">Fantasy</span>
+            <span class="anime-tag">Romance</span>
+            <span class="anime-tag">Adventure</span>
+          </div>
+          <p class="anime-card-desc">
+            An absolute masterpiece of warmth and wonder. Joe Hisaishi's score, Calcifer's personality, and Howl and Sophie's growth make it an eternal comfort watch.
+          </p>
+          <div class="anime-card-footer">
+            <span>🏰 Rewatch Count: 10+</span>
+            <span class="anime-rating">💖💖💖💖💖</span>
+          </div>
+        </div>
+
+        <!-- Card 3: My Hero Academia -->
+        <div class="anime-card">
+          <div class="anime-card-header">
+            <div>
+              <h3 class="anime-card-title">My Hero Academia</h3>
+              <div class="anime-card-jp">Boku no Hero Academia</div>
+            </div>
+            <span class="badge badge-mint">High Energy 💥</span>
+          </div>
+          <div class="anime-genre-tags">
+            <span class="anime-tag">Shonen</span>
+            <span class="anime-tag">Action</span>
+            <span class="anime-tag">Superheroes</span>
+          </div>
+          <p class="anime-card-desc">
+            Exciting ensemble cast, high-stakes emotional payoffs, and thoughtful questions about what it truly takes to protect others and inspire hope.
+          </p>
+          <div class="anime-card-footer">
+            <span>⚡ Status: Caught Up</span>
+            <span class="anime-rating">💖💖💖💖✨</span>
+          </div>
+        </div>
+
+        <!-- Card 4: Fruits Basket -->
+        <div class="anime-card">
+          <div class="anime-card-header">
+            <div>
+              <h3 class="anime-card-title">Fruits Basket (2019)</h3>
+              <div class="anime-card-jp">Furuba / Natsuki Takaya</div>
+            </div>
+            <span class="badge badge-lavender">Beloved 🍙</span>
+          </div>
+          <div class="anime-genre-tags">
+            <span class="anime-tag">Drama</span>
+            <span class="anime-tag">Supernatural</span>
+            <span class="anime-tag">Slice of Life</span>
+          </div>
+          <p class="anime-card-desc">
+            Tohru Honda's empathy and the profound healing journey of the cursed Sohma family make this one of the most touching series ever created.
+          </p>
+          <div class="anime-card-footer">
+            <span>🌸 Status: Completed</span>
+            <span class="anime-rating">💖💖💖💖💖</span>
+          </div>
+        </div>
+
+        <!-- Card 5: Spy x Family -->
+        <div class="anime-card">
+          <div class="anime-card-header">
+            <div>
+              <h3 class="anime-card-title">Spy x Family</h3>
+              <div class="anime-card-jp">Tatsuya Endo</div>
+            </div>
+            <span class="badge badge-peach">Wholesome Fun 🥜</span>
+          </div>
+          <div class="anime-genre-tags">
+            <span class="anime-tag">Comedy</span>
+            <span class="anime-tag">Action</span>
+            <span class="anime-tag">Found Family</span>
+          </div>
+          <p class="anime-card-desc">
+            Hilarious found-family espionage comedy. Anya's mind-reading expressions and Bond the telepathic dog make every single episode a joy to watch!
+          </p>
+          <div class="anime-card-footer">
+            <span>🕵️ Status: Watching</span>
+            <span class="anime-rating">💖💖💖💖✨</span>
+          </div>
+        </div>
+
+        <!-- Card 6: Frieren: Beyond Journey's End -->
+        <div class="anime-card">
+          <div class="anime-card-header">
+            <div>
+              <h3 class="anime-card-title">Frieren: Beyond Journey's End</h3>
+              <div class="anime-card-jp">Sousou no Frieren</div>
+            </div>
+            <span class="badge badge-mint">Stunning 🪄</span>
+          </div>
+          <div class="anime-genre-tags">
+            <span class="anime-tag">High Fantasy</span>
+            <span class="anime-tag">Adventure</span>
+            <span class="anime-tag">Philosophical</span>
+          </div>
+          <p class="anime-card-desc">
+            A serene, breathtakingly animated meditation on memory, the passage of time, and discovering the precious value of human connection.
+          </p>
+          <div class="anime-card-footer">
+            <span>🌿 Status: Loved It</span>
+            <span class="anime-rating">💖💖💖💖💖</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: DIGITAL HUMANITIES 101 HUB -->
+    <section class="section-wrapper" id="coursework">
+      <div class="section-header">
+        <h2 class="section-title">
+          <span class="section-title-icon">💻</span> Digital Humanities 101 Hub
+        </h2>
+        <span class="badge badge-mint">Denison University Coursework 🌸</span>
+      </div>
+
+      <!-- Core Pages Grid -->
+      <div class="course-hub-grid" style="margin-bottom: 24px;">
+        <div class="course-card">
+          <div class="course-card-icon">🌸</div>
+          <h3 class="course-card-title">About Me</h3>
+          <p class="course-card-desc">My introduction, background, creative interests, and goals for this semester.</p>
+          <a href="pages/about.html" class="course-card-link">Read About Page →</a>
+        </div>
+
+        <div class="course-card">
+          <div class="course-card-icon">♿</div>
+          <h3 class="course-card-title">Accessibility</h3>
+          <p class="course-card-desc">How accessibility and inclusive design principles are woven into my digital work.</p>
+          <a href="pages/accessibility.html" class="course-card-link">Explore Accessibility →</a>
+        </div>
+
+        <div class="course-card">
+          <div class="course-card-icon">🤖</div>
+          <h3 class="course-card-title">How I Use AI</h3>
+          <p class="course-card-desc">My approach to artificial intelligence, transparent prompts, and human agency.</p>
+          <a href="pages/how-i-use-ai.html" class="course-card-link">View AI Ethics →</a>
+        </div>
+
+        <div class="course-card">
+          <div class="course-card-icon">🌱</div>
+          <h3 class="course-card-title">Sustainability</h3>
+          <p class="course-card-desc">Reflections on the environmental impact, computing costs, and ethics of tech.</p>
+          <a href="pages/sustainability.html" class="course-card-link">Read Sustainability →</a>
+        </div>
+      </div>
+
+      <!-- Weekly Reflections Hub -->
+      <div class="cute-card" style="margin-bottom: 20px;">
+        <h3 style="color: var(--primary-deep); margin-bottom: 4px; display: flex; align-items: center; gap: 8px;">
+          <span>📝</span> Weekly Reflections
+        </h3>
+        <p style="font-size: 0.92rem; color: var(--text-muted);">
+          Weekly thinking prompts, insights, and questions throughout the semester.
+        </p>
+        <div class="weeks-grid">
+          <a href="reflections/week01.html" class="week-badge-link">Week 1 <span>Reflect 1</span></a>
+          <a href="reflections/week02.html" class="week-badge-link">Week 2 <span>Reflection</span></a>
+          <a href="reflections/week03.html" class="week-badge-link">Week 3 <span>Reflection</span></a>
+          <a href="reflections/week04.html" class="week-badge-link">Week 4 <span>Reflection</span></a>
+          <a href="reflections/week05.html" class="week-badge-link">Week 5 <span>Reflection</span></a>
+          <a href="reflections/week06.html" class="week-badge-link">Week 6 <span>Reflection</span></a>
+          <a href="reflections/week07.html" class="week-badge-link">Week 7 <span>Reflection</span></a>
+          <a href="reflections/week08.html" class="week-badge-link">Week 8 <span>Reflection</span></a>
+          <a href="reflections/week09.html" class="week-badge-link">Week 9 <span>Reflection</span></a>
+          <a href="reflections/week10.html" class="week-badge-link">Week 10 <span>Reflection</span></a>
+          <a href="reflections/week11.html" class="week-badge-link">Week 11 <span>Reflection</span></a>
+          <a href="reflections/week12.html" class="week-badge-link">Week 12 <span>Reflection</span></a>
+          <a href="reflections/week13.html" class="week-badge-link">Week 13 <span>Reflection</span></a>
+        </div>
+      </div>
+
+      <!-- Weekly Makes Hub -->
+      <div class="cute-card">
+        <h3 style="color: var(--primary-deep); margin-bottom: 4px; display: flex; align-items: center; gap: 8px;">
+          <span>🛠️</span> Weekly Critical Makes
+        </h3>
+        <p style="font-size: 0.92rem; color: var(--text-muted);">
+          Creative artifacts, prototypes, process notes, and experiments produced for DH101.
+        </p>
+        <div class="weeks-grid">
+          <a href="makes/week01.html" class="week-badge-link">Week 1 <span>Reverse Eng.</span></a>
+          <a href="makes/week03.html" class="week-badge-link">Week 3 <span>Make</span></a>
+          <a href="makes/week04.html" class="week-badge-link">Week 4 <span>Make</span></a>
+          <a href="makes/week05.html" class="week-badge-link">Week 5 <span>Make</span></a>
+          <a href="makes/week06.html" class="week-badge-link">Week 6 <span>Make</span></a>
+          <a href="makes/week07.html" class="week-badge-link">Week 7 <span>Make</span></a>
+          <a href="makes/week08.html" class="week-badge-link">Week 8 <span>Make</span></a>
+          <a href="makes/week09.html" class="week-badge-link">Week 9 <span>Generators</span></a>
+          <a href="makes/week10.html" class="week-badge-link">Week 10 <span>Games</span></a>
+          <a href="makes/week11.html" class="week-badge-link">Week 11 <span>Labor</span></a>
+          <a href="makes/week12.html" class="week-badge-link">Week 12 <span>Ecology</span></a>
+          <a href="makes/week13.html" class="week-badge-link">Week 13 <span>Futures</span></a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Cute Footer -->
+  <footer class="cute-footer">
+    <div class="container">
+      <p>Made with <span class="footer-heart">💖</span> and lots of treats for Angel Baby 🐾</p>
+      <p><small>© 2026 Madison Jensen • Denison University • DH 101</small></p>
+    </div>
+  </footer>
+
+  <!-- Interactive JavaScript for Dog Gallery & Photo Upload Preview -->
+  <script>
+    function swapDogPhoto(src, caption) {
+      const img = document.getElementById('mainDogImg');
+      img.src = src;
+      img.alt = caption;
+    }
+
+    const uploadInput = document.getElementById('dogPhotoUpload');
+    if (uploadInput) {
+      uploadInput.addEventListener('change', function(e) {
+        const file = e.target.files[0];
+        if (file) {
+          const reader = new FileReader();
+          reader.onload = function(event) {
+            const newSrc = event.target.result;
+            // Swap main photo
+            swapDogPhoto(newSrc, 'New photo of Angel Baby');
+            
+            // Add new thumbnail
+            const thumbContainer = document.getElementById('dogThumbs');
+            const newThumb = document.createElement('div');
+            newThumb.className = 'dog-thumb';
+            newThumb.onclick = function() { swapDogPhoto(newSrc, 'Angel Baby photo'); };
+            newThumb.innerHTML = `<img src="${newSrc}" alt="Angel Baby">`;
+            
+            // Insert before the upload slot
+            const addSlot = thumbContainer.querySelector('.dog-add-slot');
+            thumbContainer.insertBefore(newThumb, addSlot);
+
+            document.getElementById('uploadNote').innerHTML = 
+              '✨ <em>Added your new photo of Angel! It will display as long as this page remains open. To permanently save it, drop the image into <code>assets/images/</code>!</em>';
+          };
+          reader.readAsDataURL(file);
+        }
+      });
+    }
+  </script>
+</body>
+</html>
+

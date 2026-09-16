@@ -1,0 +1,14 @@
+title: "Maddie's Space 🌸"
+description: "DH101 Course Portfolio, Resume & Angel Baby's Corner"
+theme: null
+markdown: kramdown
+permalink: pretty
+kramdown:
+  input: GFM
+  hard_wrap: false
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+

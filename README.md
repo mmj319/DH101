@@ -2,6 +2,8 @@
 
 Hello, DH! Welcome to my course website and personal digital portfolio for **DH 101: Introduction to Digital Humanities** (Spring 2026) at Denison University.
 
+This site documents my critical making this semester, with reflections, projects, and course materials.
+
 ## 🌟 Quick Links
 - 🏠 **[Homepage & Interactive Portfolio](index.html)**
 - 🐾 **[Angel Baby's Corner (Dog Space)](pages/dog.md)**

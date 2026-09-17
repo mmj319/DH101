@@ -2,11 +2,7 @@
 
 ## The Artifact
 
-### ChatSelfie
-![ChatSelfie](../assets/images/ChatSelfie.png)
 
-### ChatSelfie Edited
-![ChatSelfie Edited](../assets/images/ChatSelfieEdited.PNG)
 
 ## Process Notes
 How did you make this?

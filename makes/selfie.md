@@ -2,11 +2,11 @@
 
 ## The Artifact
 
-### ChatSelfie
-![ChatSelfie](../assets/images/ChatSelfie.png)
+### Original Selfie (ChatSelfie)
+![Original unedited selfie](../assets/images/ChatSelfie.png)
 
-### ChatSelfie Edited
-![ChatSelfie Edited](../assets/images/ChatSelfieEdited.PNG)
+### Edited Selfie (ChatSelfie Edited - "A filter unbeknownst to me")
+![Edited selfie with doodles, cat ears, hearts, and 'A filter unbeknownst to me'](../assets/images/ChatSelfieEdited.PNG)
 
 ## Process Notes
 How did you make this?

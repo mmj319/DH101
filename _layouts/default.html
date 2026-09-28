@@ -7,6 +7,16 @@
   <meta name="description" content="{{ page.description | default: site.description }}">
   <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌸</text></svg>">
+  <script>
+    (function() {
+      try {
+        var saved = localStorage.getItem('maddie_space_theme');
+        var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        var theme = saved || (prefersDark ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {}
+    })();
+  </script>
 </head>
 <body>
   <!-- Navigation Header -->
@@ -22,6 +32,10 @@
         <li><a href="{{ site.baseurl }}/pages/about.html">🌸 About</a></li>
         <li><a href="{{ site.baseurl }}/#coursework">📚 DH101</a></li>
       </ul>
+      <button id="themeToggle" class="theme-toggle" type="button" aria-label="Toggle theme" title="Toggle theme">
+        <span class="theme-toggle-icon" aria-hidden="true">🌙</span>
+        <span class="theme-toggle-text">Dark</span>
+      </button>
     </div>
   </nav>
 
@@ -39,6 +53,7 @@
       <p><small>Maddie Jensen • Denison University • Digital Humanities 101</small></p>
     </div>
   </footer>
+  <script src="{{ site.baseurl }}/assets/js/theme.js"></script>
 </body>
 </html>
 

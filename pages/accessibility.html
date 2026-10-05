@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accessibility Statement | DH101 | Maddie Jensen</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>♿</text></svg>">
+  <script>
+    (function() {
+      try {
+        var saved = localStorage.getItem('maddie_space_theme');
+        var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        var theme = saved || (prefersDark ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <!-- Navigation Header -->
+  <nav class="cute-nav">
+    <div class="cute-nav-inner">
+      <a href="../index.html" class="cute-brand">
+        <span class="brand-sparkle">✨</span> Maddie's Space 🌸
+      </a>
+      <ul class="nav-links">
+        <li><a href="../index.html">🏠 Home</a></li>
+        <li><a href="../index.html#angel">🐾 Angel Baby</a></li>
+        <li><a href="../index.html#resume">📄 Resume</a></li>
+        <li><a href="about.html">🌸 About</a></li>
+        <li><a href="../index.html#coursework" class="active">📚 DH101</a></li>
+      </ul>
+      <button id="themeToggle" class="theme-toggle" type="button" aria-label="Toggle theme" title="Toggle theme">
+        <span class="theme-toggle-icon" aria-hidden="true">🌙</span>
+        <span class="theme-toggle-text">Dark</span>
+      </button>
+    </div>
+  </nav>
+
+  <main class="container">
+    <article class="markdown-content">
+      <div style="text-align: center; margin-bottom: 28px;">
+        <div style="display: flex; justify-content: center; gap: 8px; flex-wrap: wrap; margin-bottom: 12px;">
+          <span class="badge badge-pink">Inclusive Design</span>
+          <span class="badge badge-lavender">DH101 Core Values</span>
+          <span class="badge badge-mint">Denison University 🌸</span>
+        </div>
+        <h1 style="border: none; padding: 0; margin-bottom: 8px;">♿ Accessibility Statement</h1>
+        <p style="color: var(--text-muted); font-size: 1.05rem;">
+          How accessibility and inclusive design principles are woven into my digital humanities work.
+        </p>
+      </div>
+
+
+      <h2>Accessibility Principles in DH101</h2>
+      <p>
+        Digital spaces should be welcoming, accessible, and comfortable for everyone. In designing this portfolio, accessibility is not an afterthought—it is a core creative principle that shapes visual styling, contrast ratios, and structural hierarchy.
+      </p>
+
+      <div class="cute-card" style="margin-bottom: 24px;">
+        <h3 style="margin-top: 0; color: var(--primary-deep); display: flex; align-items: center; gap: 8px;">
+          <span>🎨</span> Visual & Contrast Considerations
+        </h3>
+        <p>
+          This website includes both a soft pastel light mode and a deep plum/midnight dark mode. In both modes, color palettes are carefully calibrated for readability and reduced eye strain:
+        </p>
+        <ul>
+          <li><strong>Text Contrast:</strong> Dark charcoal text (#4a3e47) on creamy backgrounds in light mode, and crisp light text (#f5edf2) on deep plum backgrounds in dark mode.</li>
+          <li><strong>Typography:</strong> Friendly, highly legible rounded sans-serif typefaces (<em>Quicksand</em> for headings and <em>Nunito</em> for body copy) chosen for clear letterforms and easy reading.</li>
+          <li><strong>Spacing & Hierarchy:</strong> Generous line height (1.7), clear headings, and structured cards to support screen readers and reduce cognitive fatigue.</li>
+        </ul>
+      </div>
+
+      <div class="cute-card" style="margin-bottom: 24px;">
+        <h3 style="margin-top: 0; color: var(--primary-deep); display: flex; align-items: center; gap: 8px;">
+          <span>🏷️</span> Image Descriptions & Alt Text
+        </h3>
+        <p>
+          Every visual artifact—from Angel Baby's photos to our multi-panel comics and AI selfies—includes comprehensive descriptive <code>alt</code> attributes. This ensures that visitors using screen readers or browsing on text-only clients have full access to visual humor, artistic details, and project context.
+        </p>
+      </div>
+
+      <div class="cute-card">
+        <h3 style="margin-top: 0; color: var(--primary-deep); display: flex; align-items: center; gap: 8px;">
+          <span>⌨️</span> Keyboard & Motor Navigation
+        </h3>
+        <p>
+          All interactive elements—including the dark/light mode switcher, navigation bars, and weekly make buttons—are built with standard semantic HTML buttons and links with clear focus states to support keyboard-only navigation.
+        </p>
+      </div>
+
+
+      <div style="margin-top: 48px; padding-top: 24px; border-top: 2px dashed var(--border-soft); text-align: center;">
+        <a href="../index.html#coursework" class="btn-cute btn-primary">🌸 Back to DH101 Hub</a>
+        <a href="about.html" class="btn-cute btn-secondary" style="margin-left: 10px;">About Maddie →</a>
+      </div>
+    </article>
+  </main>
+
+  <footer class="cute-footer">
+    <div class="container">
+      <p>Made with <span class="footer-heart">💖</span> and lots of treats for Angel Baby 🐾</p>
+      <p><small>© 2026 Madison Jensen • Denison University • Digital Humanities 101</small></p>
+    </div>
+  </footer>
+  <script src="../assets/js/theme.js"></script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sustainability & Computing | DH101 | Maddie Jensen</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌱</text></svg>">
+  <script>
+    (function() {
+      try {
+        var saved = localStorage.getItem('maddie_space_theme');
+        var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        var theme = saved || (prefersDark ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <!-- Navigation Header -->
+  <nav class="cute-nav">
+    <div class="cute-nav-inner">
+      <a href="../index.html" class="cute-brand">
+        <span class="brand-sparkle">✨</span> Maddie's Space 🌸
+      </a>
+      <ul class="nav-links">
+        <li><a href="../index.html">🏠 Home</a></li>
+        <li><a href="../index.html#angel">🐾 Angel Baby</a></li>
+        <li><a href="../index.html#resume">📄 Resume</a></li>
+        <li><a href="about.html">🌸 About</a></li>
+        <li><a href="../index.html#coursework" class="active">📚 DH101</a></li>
+      </ul>
+      <button id="themeToggle" class="theme-toggle" type="button" aria-label="Toggle theme" title="Toggle theme">
+        <span class="theme-toggle-icon" aria-hidden="true">🌙</span>
+        <span class="theme-toggle-text">Dark</span>
+      </button>
+    </div>
+  </nav>
+
+  <main class="container">
+    <article class="markdown-content">
+      <div style="text-align: center; margin-bottom: 28px;">
+        <div style="display: flex; justify-content: center; gap: 8px; flex-wrap: wrap; margin-bottom: 12px;">
+          <span class="badge badge-pink">Ecological Awareness</span>
+          <span class="badge badge-lavender">DH101 Core Values</span>
+          <span class="badge badge-mint">Denison University 🌸</span>
+        </div>
+        <h1 style="border: none; padding: 0; margin-bottom: 8px;">🌱 Sustainability & Computing</h1>
+        <p style="color: var(--text-muted); font-size: 1.05rem;">
+          Reflecting on the environmental impact, computing costs, and ecological footprint of technology.
+        </p>
+      </div>
+
+
+      <h2>Technology, Carbon, & Ecology</h2>
+      <p>
+        The digital cloud is not weightless. Behind every high-parameter generative model, data center server, and training run lies a tangible physical infrastructure consuming vast amounts of fresh water for cooling, electrical power from grids, and rare earth minerals for silicon chips.
+      </p>
+
+      <div class="cute-card" style="margin-bottom: 24px;">
+        <h3 style="margin-top: 0; color: var(--primary-deep); display: flex; align-items: center; gap: 8px;">
+          <span>⚡</span> The Hidden Cost of AI Compute
+        </h3>
+        <p>
+          While generating images or text prompts feels instantaneous and ephemeral on our laptops, running billions of matrix multiplications on server farms produces significant carbon emissions and places heavy demands on local electrical grids. Recognizing this physical footprint reminds us to use computational tools mindfully rather than superfluously.
+        </p>
+      </div>
+
+      <div class="cute-card" style="margin-bottom: 24px;">
+        <h3 style="margin-top: 0; color: var(--primary-deep); display: flex; align-items: center; gap: 8px;">
+          <span>🍃</span> Lightweight, Static Web Design
+        </h3>
+        <p>
+          This website itself is designed with sustainability and efficiency in mind:
+        </p>
+        <ul>
+          <li><strong>Pure Static HTML & CSS:</strong> No bloated frameworks, heavy runtime bundles, or background server processing.</li>
+          <li><strong>Optimized Assets:</strong> Clean SVG icons, optimized responsive images, and system-level performance.</li>
+          <li><strong>Longevity:</strong> Accessible, timeless web standards that load quickly and respect visitors' bandwidth and battery life.</li>
+        </ul>
+      </div>
+
+      <div class="cute-card">
+        <h3 style="margin-top: 0; color: var(--primary-deep); display: flex; align-items: center; gap: 8px;">
+          <span>💭</span> Moving Forward
+        </h3>
+        <p>
+          As digital humanists, part of our responsibility is advocating for green computing policies, renewable-powered data centers, and questioning whether every problem truly requires an energy-intensive AI solution when simpler, human-centered approaches thrive.
+        </p>
+      </div>
+
+
+      <div style="margin-top: 48px; padding-top: 24px; border-top: 2px dashed var(--border-soft); text-align: center;">
+        <a href="../index.html#coursework" class="btn-cute btn-primary">🌸 Back to DH101 Hub</a>
+        <a href="about.html" class="btn-cute btn-secondary" style="margin-left: 10px;">About Maddie →</a>
+      </div>
+    </article>
+  </main>
+
+  <footer class="cute-footer">
+    <div class="container">
+      <p>Made with <span class="footer-heart">💖</span> and lots of treats for Angel Baby 🐾</p>
+      <p><small>© 2026 Madison Jensen • Denison University • Digital Humanities 101</small></p>
+    </div>
+  </footer>
+  <script src="../assets/js/theme.js"></script>
+</body>
+</html>

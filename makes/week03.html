@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Week 3 – Selfie & Identity | DH101 | Maddie Jensen</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤳</text></svg>">
+  <script>
+    (function() {
+      try {
+        var saved = localStorage.getItem('maddie_space_theme');
+        var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+        var theme = saved || (prefersDark ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <!-- Navigation Header -->
+  <nav class="cute-nav">
+    <div class="cute-nav-inner">
+      <a href="../index.html" class="cute-brand">
+        <span class="brand-sparkle">✨</span> Maddie's Space 🌸
+      </a>
+      <ul class="nav-links">
+        <li><a href="../index.html">🏠 Home</a></li>
+        <li><a href="../index.html#angel">🐾 Angel Baby</a></li>
+        <li><a href="../index.html#resume">📄 Resume</a></li>
+        <li><a href="../pages/about.html">🌸 About</a></li>
+        <li><a href="../index.html#coursework" class="active">📚 DH101</a></li>
+      </ul>
+      <button id="themeToggle" class="theme-toggle" type="button" aria-label="Toggle theme" title="Toggle theme">
+        <span class="theme-toggle-icon" aria-hidden="true">🌙</span>
+        <span class="theme-toggle-text">Dark</span>
+      </button>
+    </div>
+  </nav>
+
+  <main class="container">
+    <article class="markdown-content">
+      <div style="text-align: center; margin-bottom: 24px;">
+        <div style="display: flex; justify-content: center; gap: 8px; flex-wrap: wrap; margin-bottom: 12px;">
+          <span class="badge badge-pink">🛠️ Critical Make 03</span>
+          <span class="badge badge-lavender">DH101 • Fall 2025</span>
+          <span class="badge badge-mint">Denison University 🌸</span>
+        </div>
+        <h1 style="border: none; padding: 0; margin-bottom: 8px;">🤳 Week 3 – Selfie & Identity</h1>
+        <p style="color: var(--text-muted); font-size: 1.05rem;">
+          Digital Humanities 101 • Critical Making &amp; Computational Inquiry
+        </p>
+      </div>
+
+      <!-- Quick Subnav: Prev, Hub, Next -->
+      <div style="display: flex; gap: 10px; justify-content: space-between; align-items: center; flex-wrap: wrap; margin-bottom: 30px; padding: 10px 16px; background: var(--bg-card-alt); border-radius: var(--radius-md); border: 1px dashed var(--border-soft);">
+        <div>
+          <a href="week01.html" class="btn-cute btn-secondary" style="font-size: 0.85rem; padding: 6px 14px;">← Reverse Engineering</a>
+        </div>
+        <div>
+          <a href="../index.html#coursework" class="btn-cute btn-secondary" style="font-size: 0.85rem; padding: 6px 14px;">📚 DH101 Hub</a>
+        </div>
+        <div>
+          <a href="week04.html" class="btn-cute btn-secondary" style="font-size: 0.85rem; padding: 6px 14px;">Comic & Storytelling →</a>
+        </div>
+      </div>
+
+
+      <h2>The Artifact</h2>
+      <p style="color: var(--text-muted); margin-bottom: 20px; font-size: 1.05rem;">
+        Comparing an AI-generated selfie based strictly on a text self-description with an artistically edited version created using IBIS Paint X.
+      </p>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 28px; margin: 26px 0 34px;">
+        <div class="polaroid-wrapper" style="margin: 0 auto; max-width: 360px; width: 100%;">
+          <div class="polaroid-frame" style="transform: rotate(-1deg);">
+            <div class="washi-tape" style="background: rgba(255, 183, 197, 0.75); left: 32%;"></div>
+            <div class="polaroid-img-box">
+              <img src="../assets/images/ChatSelfie.png" alt="Original unedited selfie generated with ChatGPT">
+            </div>
+            <div class="polaroid-caption">
+              <span>✨ Original Selfie (ChatSelfie)</span>
+              <small style="font-size: 0.85rem; color: var(--text-muted); font-weight: 500;">Initial ChatGPT prompt generation</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="polaroid-wrapper" style="margin: 0 auto; max-width: 360px; width: 100%;">
+          <div class="polaroid-frame" style="transform: rotate(1.2deg);">
+            <div class="washi-tape" style="background: rgba(238, 220, 255, 0.75); left: 32%;"></div>
+            <div class="polaroid-img-box">
+              <img src="../assets/images/ChatSelfieEdited.PNG" alt="Edited selfie with doodles, cat ears, hearts, and 'A filter unbeknownst to me'">
+            </div>
+            <div class="polaroid-caption">
+              <span>🎨 Edited Selfie</span>
+              <small style="font-size: 0.85rem; color: var(--text-muted); font-weight: 500;">"A filter unbeknownst to me" • IBIS Paint X</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h2>Process Notes</h2>
+      <div class="cute-card" style="margin-bottom: 24px;">
+        <h3 style="margin-top: 0; color: var(--primary-deep); display: flex; align-items: center; gap: 8px;">
+          <span>💡</span> How did you make this?
+        </h3>
+        <p>
+          I made these images through inputting a series of detailed prompts to ChatGPT's interface. I put in an initial description and then tweaked and added more description based on what image the AI returned to me. I did this until I was relatively happy with the image. Then to create my tampered with image I took the image the AI gave me and put it into IBIS paint X and drew on top of it until I was happy with the results.
+        </p>
+
+        <h3 style="color: var(--primary-deep); display: flex; align-items: center; gap: 8px;">
+          <span>🛠️</span> What tools did you use?
+        </h3>
+        <p>
+          For this project I utilized <strong>ChatGPT's image creation</strong> and <strong>IBIS Paint X</strong>.
+        </p>
+
+        <h3 style="color: var(--primary-deep); display: flex; align-items: center; gap: 8px;">
+          <span>🤔</span> What decisions did you make?
+        </h3>
+        <p>
+          I decided what prompts to give the AI. Then after I had an image I was pleased with I decided to add some more filteresque features to the image to really accentuate how filtered it already felt. I decided to add text <em>"A filter Unbeknownst to Me"</em> to add to the theme I was already sensing.
+        </p>
+      </div>
+
+      <h2>Reflection</h2>
+      <div class="cute-card" style="margin-bottom: 24px;">
+        <p>
+          The creation of a selfie resembling me through ai was an interesting process to say the least. I chose to go the route of simply describing myself to ChatGPT rather than uploading an image I already had. As you can see the initial image it gave me is very different from what I ended up happy with. An interesting note that even though in my initial prompt I told it my face was on the chubbier/rounder end it still decided to make the body in the image seen as skinny. Something I adjusted in my further prompts but it still did not add much to my body. I have to say the only place I completely see myself in the image the ai created is the hair. That is actually pretty accurate to what my hair actually looks like. The placement of my rosacea is also fairly accurate but in the image it looks more like makeup I added rather than a natural change in pigment in my skin tone like I have. The anime tshirt is also fairly accurate to something that I would actually wear. But I did prompt the AI to do that, so I am curious what kind of clothing it would have put me in if I didn’t tell it what to do.
+        </p>
+        <p>
+          Everything else is where I don’t see myself. The face just looks uncanny. It looks like a soft porcelain doll more than an actual human. The facial features are not accentuated. And even though I adjusted that my lips were not as big as it made them in the initial image, it still did not shrink them very much when I made that edit. The ai created a filtered version of a human without showing the true complexities of what I truly look like. This is really problematic because the AI created/changed things about me when I was fairly explicit in what I wanted. These attribute changes can create insecurities that people didn’t even previously have because of what is expected of them.
+        </p>
+      </div>
+
+      <h2>Attribution &amp; AI Use</h2>
+      <div class="cute-card">
+        <h3 style="margin-top: 0; color: var(--primary-deep); display: flex; align-items: center; gap: 8px;">
+          <span>🤖</span> AI Prompts &amp; Iteration Summary
+        </h3>
+        <div style="margin-bottom: 16px;">
+          <strong>Initial Prompt to Create:</strong>
+          <blockquote style="margin: 8px 0 16px;">
+            "a selfie for me of a white girl. Her hair is brown with a little blonde mixed in and its curly and chin length. Curl type 3b. Her hair is a little flat near the scalp though. She has bangs that are down to her eybrows, the bangs are also curly. Her eyebrows are also slighlty lighter than the rest of her hair. Her eyes are hazel, hooded, and double lidded, and she usually wears winged black eyeliner.Her face is a little round and chubby and her cheeks are usually pretty red. She is also usually in a toilet-bound hanako kun shirt"
+          </blockquote>
+        </div>
+        <div>
+          <strong>Edits made to get second image:</strong>
+          <blockquote style="margin: 8px 0 0;">
+            "She's a little chubbier than that and her lips are smaller. She has light freckling on her nose and cheeks. Her lips aren't that big. Her eyes have an extra bottom crease. And her nose is more button shaped. Her eyebrows also aren't that defined and the extra lower lid crease is not that defined."
+          </blockquote>
+        </div>
+      </div>
+
+
+      <!-- Bottom Navigation -->
+      <div style="margin-top: 48px; padding-top: 24px; border-top: 2px dashed var(--border-soft); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;">
+        <a href="week01.html" class="btn-cute btn-secondary">← Reverse Engineering</a>
+        <a href="../index.html#coursework" class="btn-cute btn-primary">🌸 Back to DH101 Hub</a>
+        <a href="week04.html" class="btn-cute btn-secondary">Comic & Storytelling →</a>
+      </div>
+    </article>
+  </main>
+
+  <footer class="cute-footer">
+    <div class="container">
+      <p>Made with <span class="footer-heart">💖</span> and lots of treats for Angel Baby 🐾</p>
+      <p><small>© 2026 Madison Jensen • Denison University • Digital Humanities 101</small></p>
+    </div>
+  </footer>
+  <script src="../assets/js/theme.js"></script>
+</body>
+</html>

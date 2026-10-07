@@ -67,13 +67,34 @@
 
 
       <h2>The Artifact</h2>
-      <div class="cute-card" style="margin-bottom: 24px; text-align: center; padding: 36px 20px; border: 2px dashed var(--border-dashed); background: var(--bg-card-alt);">
-        <div style="font-size: 2.5rem; margin-bottom: 10px;">🎞️</div>
-        <h3 style="margin: 0 0 8px; color: var(--primary-deep);">GIF & Remix Culture Artifact</h3>
-        <p style="color: var(--text-muted); max-width: 520px; margin: 0 auto 18px; font-size: 0.95rem;">
-          Describe or embed your critical artifact here. Include images, interactive embeds, code blocks, or links as appropriate.
-        </p>
-        <span class="badge badge-pink" style="font-size: 0.85rem;">✨ Media &amp; Project Showcase Area</span>
+      <div style="display: flex; flex-direction: column; gap: 32px; margin: 24px auto 36px; align-items: center;">
+        <!-- Cirrus Word Cloud -->
+        <div class="polaroid-frame" style="padding: 16px; max-width: 100%; width: fit-content; text-align: center;">
+          <div class="washi-tape" style="background: rgba(238, 220, 255, 0.75); left: 38%;"></div>
+          <div style="overflow: hidden; border-radius: var(--radius-sm); border: 1px solid var(--border-soft); background: #ffffff;">
+            <iframe style='width: 567px; max-width: 100%; height: 513px; border: none; display: block;' src='https://voyant-tools.org/tool/Cirrus/?visible=25&corpus=53f986b679ab667d278824424b049b7e'></iframe>
+          </div>
+          <div class="polaroid-caption" style="margin-top: 12px; text-align: center;">
+            <span style="font-size: 1.05rem; font-weight: 700;">☁️ Voyant Tools — Cirrus Word Cloud</span>
+            <small style="display: block; margin-top: 4px; font-size: 0.85rem; color: var(--text-muted); font-weight: 500;">
+              Interactive Corpus Word Cloud
+            </small>
+          </div>
+        </div>
+
+        <!-- Trends Graph -->
+        <div class="polaroid-frame" style="padding: 16px; max-width: 100%; width: fit-content; text-align: center;">
+          <div class="washi-tape" style="background: rgba(255, 229, 212, 0.75); left: 38%;"></div>
+          <div style="overflow: hidden; border-radius: var(--radius-sm); border: 1px solid var(--border-soft); background: #ffffff;">
+            <iframe style='width: 567px; max-width: 100%; height: 513px; border: none; display: block;' src='https://voyant-tools.org/tool/Trends/?query=louder&mode=document&corpus=53f986b679ab667d278824424b049b7e'></iframe>
+          </div>
+          <div class="polaroid-caption" style="margin-top: 12px; text-align: center;">
+            <span style="font-size: 1.05rem; font-weight: 700;">📈 Voyant Tools — Trends Graph ("louder")</span>
+            <small style="display: block; margin-top: 4px; font-size: 0.85rem; color: var(--text-muted); font-weight: 500;">
+              Document Frequency Analysis
+            </small>
+          </div>
+        </div>
       </div>
 
       <h2>Process Notes</h2>
